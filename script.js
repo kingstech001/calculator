@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let output = display.innerHTML;
 
     const calculate = (btnvalue) => {
-        if (btnvalue === "=" && btnvalue !== "") {
+        if (btnvalue === "=" && output !== "") {
             output = eval(output.replace("calculate"));
         } else if (btnvalue === "AC") {
             output = "";
