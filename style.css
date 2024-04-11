@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  max-width: 260px;
+  background-color: black;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border: 1px solid rgb(76, 74, 74);
+  border-radius: 5px;
+  padding: 5px;
+}
+h1 {
+  font-family: "Teko", sans-serif;
+  color: white;
+  margin: 20px 0;
+  text-align: center;
+}
+.input {
+  width: 100%;
+  color: white;
+  text-align: end;
+  line-height: 16px;
+  word-wrap: break-word;
+  /* font-family: "Anek Kannada", sans-serif; */
+}
+.line {
+  background-color: blue;
+  width: 3px;
+  height: 30px;
+  display: inline;
+  animation: output 3s infinite;
+  /* transition: ease-in-out; */
+}
+.buttons {
+  text-align: center;
+  border: 1px solid rgb(76, 74, 74);
+  border-radius: 25px;
+  padding: 5px;
+}
+button {
+  /* font-family: "Anek Kannada", sans-serif; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 2px 0;
+}
+.orange {
+  background-color: orange;
+}
+.number {
+  background-color: rgb(39, 38, 38);
+  color: white;
+}
+
+.zero {
+  flex: 1;
+  border-radius: 20px;
+  width: 100px;
+}
+@keyframes output {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 10%;
+  }
+}
